@@ -1,0 +1,23 @@
+
+.transparent {
+    opacity: 0;
+}
+.title {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+.jump_arrow {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 10px;
+    height: 30px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.jump_arrow img {
+    width: 10px;
+    height: 30px;
+}
