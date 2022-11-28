@@ -98,6 +98,26 @@ let swiper2 = new Swiper(".swiper-container2", {
         clickable: true,
     },
 });
+// var swiper2 = new Swiper(".swiper-container2", {
+//     loop: true,
+//     effect: "cube",
+//     grabCursor: true,
+//     cubeEffect: {
+//         shadow: true,
+//         slideShadows: true,
+//         shadowOffset: 20,
+//         shadowScale: 0.94,
+//     },
+//     autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: true,
+//     },
+// });
 
 // AOS (화면 나타나는 효과)
 $(document).ready(function(){
@@ -105,4 +125,16 @@ $(document).ready(function(){
     // $("body").attr("data-aos-duration","2000");
     // $("[data-aos='fade-up']").css("transform","translate3d(0,0px,0)");
     $("body[data-aos-duration='400'] [data-aos]").css("transition-duration","2.4s");
+});
+
+// ABOUT - value 영역 화살표 관련
+$('.jump_arrow2').click(function(){
+    $(this).toggleClass('open');
+
+    if($(this).hasClass('open')){
+        $(this).next().show();      
+    } 
+    else {    
+        $(this).next().hide();   
+    }
 });

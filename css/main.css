@@ -22,7 +22,7 @@ body {
 .all_container {
     max-width: 640px;
     min-width: 270px;
-    height: 2000px;
+    /* height: 2000px; */
     margin: 0 auto;
 }
 
@@ -316,6 +316,10 @@ section.section2 .about_container .bottom_area .more_btn {
 section.section3 {
     position: relative;
 }
+.swiper-slide2 {
+    background-position: center;
+    background-size: cover;
+}
 .swiper-slide2 img {
     display: block;
     width: 100%;
@@ -323,7 +327,7 @@ section.section3 {
     object-fit: contain;
     max-width: 480px;
     height: auto;
-    filter: brightness(0.7);
+    filter: brightness(0.8);
 }
 section.section3 .games_container {
     max-width: 390px;
@@ -346,32 +350,21 @@ section.section3 .games_name {
     color: #fff;
     font-size: 16px;
 }
+.swiper-cube .swiper-cube-shadow {
+    bottom: 45px !important;
+}
 /* 글씨 반짝이 효과 */
 .neon {
     font-family: neon;
-    color: #FB4264;
+    color: #fff;
     line-height: 14px;
-    text-shadow: 0 0 5px #F40A35;
 }
 .flux {
     color: #426DFB;
     line-height: 16px;
     text-shadow: 0 0 5px #2356FF;
 }
-.neon {
-    animation: neon 1s ease infinite;
-}
-@keyframes neon {
-    0%,
-    100% {
-        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-        color: #FED128;
-    }
-    50% {
-        text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-        color: #806914;
-    }
-}
+
 .flux {
     animation: flux 1s ease infinite;
 }
