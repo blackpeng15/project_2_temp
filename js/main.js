@@ -44,16 +44,6 @@ $(window).scroll(function(){
     lastScrollTop = scrollTop;
 });
 
-// 스와이프 슬라이드 설정 영역
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 2,
-//     spaceBetween: 20,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
-
 // 스와이프 설정 영역 - mediaNews
 let swiper = new Swiper('.swiper-container', {
     loop: true,
@@ -98,26 +88,6 @@ let swiper2 = new Swiper(".swiper-container2", {
         clickable: true,
     },
 });
-// var swiper2 = new Swiper(".swiper-container2", {
-//     loop: true,
-//     effect: "cube",
-//     grabCursor: true,
-//     cubeEffect: {
-//         shadow: true,
-//         slideShadows: true,
-//         shadowOffset: 20,
-//         shadowScale: 0.94,
-//     },
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: 'bullets',
-//         clickable: true,
-//     },
-// });
 
 // AOS (화면 나타나는 효과)
 $(document).ready(function(){
@@ -138,3 +108,26 @@ $('.jump_arrow2').click(function(){
         $(this).next().hide();   
     }
 });
+
+// 일정 높이값이 되면 클래스를 추가하거나 없앰
+let isVisible = false;
+
+window.addEventListener('scroll', function() {
+    if ( checkVisible($('#striking')) && !isVisible) {
+        $('.studios_container').addClass('black');
+        isVisible=true;
+        $('.w_img').hide();
+        $('.b_img').show();
+    } 
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+};

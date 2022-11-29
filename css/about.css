@@ -1,28 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
-@font-face {
-    font-family: 'krafton';
-    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
-    font-weight: 400; /* font 굵기 정의 */
-    src: url('../font/KRAFTON_FONTWindow.ttf');
-}
-@font-face {
-    font-family: neon;
-    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
-}
-
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-/* 폰트 적용 */
-.krafton_ft {
-    font-family: 'krafton';
-}
 
 /*****************************
 **** SECTION 1 STORY 영역 ****
 ******************************/
-.section1.story .story {
+.section1.story h2.story {
     font-size: 34px;
     margin-left: 34px;
     margin-bottom: 34px;
@@ -152,7 +132,7 @@ body {
     height:180px;
     /* border:1px solid #CCC; */
     position:absolute;
-    top:-230px; bottom:0; left:12px; right:0;
+    top:-280px; bottom:0; left:12px; right:0;
     margin:auto;
     border-radius:50%; 
 }
@@ -183,7 +163,7 @@ body {
 }
 .txt_wrap {
     padding: 25px;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 70px;
 }
