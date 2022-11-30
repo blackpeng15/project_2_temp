@@ -94,7 +94,7 @@ $(document).ready(function(){
     AOS.init();
     // $("body").attr("data-aos-duration","2000");
     // $("[data-aos='fade-up']").css("transform","translate3d(0,0px,0)");
-    $("body[data-aos-duration='400'] [data-aos]").css("transition-duration","2.4s");
+    $("body[data-aos-duration='400'] [data-aos]").css("transition-duration","1s");
 });
 
 // ABOUT - value 영역 화살표 관련
@@ -109,25 +109,16 @@ $('.jump_arrow2').click(function(){
     }
 });
 
-// 일정 높이값이 되면 클래스를 추가하거나 없앰
-let isVisible = false;
+$('.turn_btn').click(function(){
+    $(this).parents('.container').toggleClass('on');
 
-window.addEventListener('scroll', function() {
-    if ( checkVisible($('#striking')) && !isVisible) {
-        $('.studios_container').addClass('black');
-        isVisible=true;
-        $('.w_img').hide();
-        $('.b_img').show();
+    if($(this).parents('.container').hasClass('on')){
+        $(this).children('.normal').hide();
+        $(this).children('.reverse').show();      
     } 
+    else {    
+        $(this).children('.reverse').hide();  
+        $(this).children('.normal').show();
+    }
 });
 
-function checkVisible( elm, eval ) {
-    eval = eval || "object visible";
-    var viewportHeight = $(window).height(), // Viewport Height
-        scrolltop = $(window).scrollTop(), // Scroll Top
-        y = $(elm).offset().top,
-        elementHeight = $(elm).height();   
-    
-    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
-    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
-};

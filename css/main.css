@@ -421,11 +421,11 @@ section.section4 .top_arrow i {
 footer {
     display: block;
     width: 100%;
-    height: 380px;
+    height: 340px;
     max-width: 640px;
     min-width: 270px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 20px 0 20px;
     background-color: #000;
     color: #fff;
 }
@@ -438,32 +438,38 @@ footer .footer_container {
 }
 footer .footer_container .top_area ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 20px;
 }
 footer .footer_container .top_area ul li a{
-    font-size: 15px;
+    font-size: 12px;
 }
 footer .footer_container .middle_area {
-    margin-top: 30px;
+    margin-top: 28px;
     border-top: 1px solid #777;
     padding-top: 30px;
 }
 footer .footer_container .middle_area ul {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 15px;
 }
 footer .footer_container .middle_area .top_wrap ul li a img {
-    height: 28px;
+    height: 24px;
 }
 footer .footer_container .middle_area .middle_txt {
     margin-top: 20px;
+    margin-left: 25px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
+    display: none;
 }
 footer .footer_container .bottom_area {
     margin-top: 30px;
     border-top: 1px solid #fff;
     padding-top: 30px;
     font-size: 13px;
-    color: #777;
+    color: #777 !important;
+    text-align: center;
 }

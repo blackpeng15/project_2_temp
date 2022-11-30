@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRAFTON - Studios</title>
+    <title>KRAFTON - News</title>
 
     <link rel="shortcut icon" href="./img/favicon.ico">
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
-    <link rel="stylesheet" href="./css/studios.css"/>
+    <link rel="stylesheet" href="./css/news.css"/>
     <link rel="stylesheet" href="./css/responsive.css"/>
     <!-- // 스타일 관련 CSS -->
 
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./studios.html" class="on">
+                        <a href="./studios.html">
                             <i class="fa-solid fa-video"></i>
                             <p>STUDIO</p>
                         </a>
@@ -97,75 +97,30 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./news.html">
+                        <a href="./news.html" class="on">
                             <i class="fa-solid fa-newspaper"></i>
                             <p>NEWS</p>
                         </a>
                     </li>
                 </ul>
             </div>
-            <section id="studios" class="section studios">
-                <div class="studios_container">
-                    <h2>Studios</h2>
-                    <div class="studios_wrap">
-                        <article id="pubg" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <img class="w_img" src="./img/sub_studio_logo_1.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_1.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">PUBG STUDIOS</p>
-                            <p class="info_txt">
-                                PUBG를 가장 강력한 문화 IP로 <br />
-                                성장시키겠습니다.
-                            </p>
-                        </article>
-                        <article id="bluehole" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
-                            <img class="w_img" src="./img/sub_studio_logo_2.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_2_2.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">Bluehole Studio</p>
-                            <p class="info_txt">
-                                MMORPG 장르를 대표하는 게임 제작사가 <br />
-                                되겠습니다.
-                            </p>
-                        </article>
-                        <article id="rising" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <img class="w_img" src="./img/sub_studio_logo_3.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_3.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">RisingWings</p>
-                            <p class="info_txt">
-                                글로벌 시장에서 인정받는 <br />
-                                모바일 캐주얼게임 명가가 되겠습니다.
-                            </p>
-                        </article>
-                        <article id="striking" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <img class="w_img" src="./img/sub_studio_logo_4.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_4.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">Striking Distance Studios</p>
-                            <p class="info_txt">
-                                퀄리티와 우수성에 대한 열정을 기반으로 <br />
-                                몰입감 넘치는 경험을 만들어냅니다.
-                            </p>
-                        </article>
-                        <article id="unknown" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <img class="w_img" src="./img/sub_studio_logo_5.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_5.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">Unknown Worlds</p>
-                            <p class="info_txt">
-                                플레이를 통한 세계의 화합
-                            </p>
-                        </article>
-                        <article id="5minlab" class="studios_article" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <img class="w_img" src="./img/sub_studio_logo_6.png" alt="">
-                            <img class="b_img" src="./img/studio_logo_6.png" alt="">
-                            <p class="job_txt">DEVELOPER   l   PUBLISHER</p>
-                            <p class="studios_name krafton_ft">5minlab</p>
-                            <p class="info_txt">
-                                유쾌한 경험과 최고의 몰입감을 제공합니다.
-                            </p>
-                        </article>
+            <section id="news" class="section news">
+                <div class="news_container">
+                    <h2>보도자료</h2>
+                    <div class="select_wrap">
+                        <form action="" name="form">
+                            <select class="select" name="category">
+                                <option value = "">All category</option>
+                                <option value = "">게임</option>
+                                <option value = "">이스포츠</option>
+                                <option value = "">etc</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="search_wrap">
+                        <form action="" name="form">
+                            <input class="search" type="text" placeholder="Search">
+                        </form>
                     </div>
                 </div>
             </section>
@@ -219,6 +174,5 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="./js/studios.js"></script>
 </body>
 </html>
